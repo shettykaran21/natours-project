@@ -14,7 +14,7 @@
   background: linear-gradient(to right, $color-green-light, $color-green-dark);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
   transition: all 0.2s;
   letter-spacing: 2px;
   text-align: center;
@@ -29,7 +29,6 @@
   font-size: 2rem;
   letter-spacing: 1.75rem;
   animation: moveInRight 0.6s ease-in-out;
-  margin-bottom: 5rem;
 }
 
 .heading-s {
