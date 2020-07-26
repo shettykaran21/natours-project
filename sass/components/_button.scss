@@ -8,7 +8,7 @@
     transition: all 0.2s ease;
     border-radius: 5rem;
     position: relative;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
   }
 
   &:hover {
@@ -56,7 +56,7 @@
 .btn--text {
   &:link,
   &:visited {
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     color: $color-green;
     display: inline-block;
     text-decoration: none;

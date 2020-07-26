@@ -12,19 +12,25 @@
 
 .section-features {
   padding: 20rem 0;
-  margin-top: -10rem;
+  margin: -10rem 0 9rem 0;
   background: linear-gradient(
       to right,
       rgba($color-green-light, 0.8),
       rgba($color-green-dark, 0.8)
     ),
     url('/img/nat-4.jpg') center center/cover no-repeat;
-  transform: skewY(-7deg);
+  transform: skewY(-6deg);
 
   &-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5rem;
-    transform: skewY(7deg);
+    transform: skewY(6deg);
   }
+}
+
+.section-tours {
+  padding: 25rem 0;
+  margin: -18rem 0;
+  background: $color-grey-light-1;
 }

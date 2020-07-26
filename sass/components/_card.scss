@@ -1,0 +1,125 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+  grid-auto-rows: minmax(50rem, auto);
+}
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    background-color: #fff;
+    height: 50rem;
+    transition: all 0.6s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.15);
+    overflow: hidden;
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background: linear-gradient(
+          to right bottom,
+          $color-orange-light,
+          $color-orange-dark
+        );
+      }
+
+      &-2 {
+        background: linear-gradient(
+          to right bottom,
+          $color-green-light,
+          $color-green-dark
+        );
+      }
+
+      &-3 {
+        background: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: multiply;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-orange-light,
+          $color-orange-dark
+        ),
+        url('/img/nat-5.jpg');
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-green-light,
+          $color-green-dark
+        ),
+        url('/img/nat-6.jpg');
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        ),
+        url('/img/nat-7.jpg');
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    right: 2rem;
+    top: 10rem;
+    text-align: right;
+  }
+
+  &__details {
+    padding: 1.5rem;
+    ul {
+      list-style: none;
+      font-size: $default-font-size;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        padding: 1rem 0;
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+}
