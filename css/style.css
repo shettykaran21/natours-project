@@ -291,6 +291,60 @@ body {
       font-size: 5rem;
       font-weight: 100; }
 
+.story {
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 6rem;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: skewX(-7deg);
+  margin-bottom: 8rem; }
+  .story > * {
+    transform: skewX(7deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    clip-path: circle(50% at 50% 50%);
+    overflow: hidden;
+    position: relative; }
+    .story__shape--image {
+      height: 100%;
+      transition: all 0.2s ease;
+      transform: scale(1.4); }
+    .story__shape--caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      opacity: 0;
+      color: #fff;
+      font-size: 1.8rem;
+      text-align: center;
+      transition: all 0.2s ease; }
+  .story:hover .story__shape--image {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%); }
+  .story:hover .story__shape--caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .story__text {
+    width: 82%; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  z-index: -1; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .header {
   height: 95vh;
   color: #fff;
@@ -320,7 +374,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  margin: -10rem 0 9rem 0;
+  margin-top: -10rem;
   background: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(39, 180, 133, 0.8)), url("/img/nat-4.jpg") center center/cover no-repeat;
   transform: skewY(-6deg); }
   .section-features-container {
@@ -330,6 +384,10 @@ body {
     transform: skewY(6deg); }
 
 .section-tours {
-  padding: 25rem 0;
-  margin: -18rem 0;
+  padding: 25rem 0 20rem;
+  margin-top: -8rem;
   background: #f7f7f7; }
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative; }
