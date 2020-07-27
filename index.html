@@ -27,7 +27,7 @@
     <main>
       <section class="section-about">
         <div class="container">
-          <h2 class="heading-secondary mb-l">
+          <h2 class="heading-secondary mb-l center-text">
             Exciting tours for adventurous people
           </h2>
 
@@ -116,7 +116,7 @@
 
       <section class="section-tours">
         <div class="container">
-          <h2 class="heading-secondary mb-l">
+          <h2 class="heading-secondary mb-l center-text">
             Most Popular Trips
           </h2>
 
@@ -218,7 +218,9 @@
           </video>
         </div>
 
-        <h2 class="heading-secondary mb-l">We Make People Genuinely Happy</h2>
+        <h2 class="heading-secondary mb-l center-text">
+          We Make People Genuinely Happy
+        </h2>
 
         <div class="story-container container">
           <div class="story">
@@ -272,6 +274,69 @@
 
         <div class="center-text">
           <a href="#" class="btn--text">Discover All Tours &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-booking">
+        <div class="container">
+          <div class="book">
+            <div class="book__form">
+              <h3 class="heading-secondary mb-s">Start booking now</h3>
+              <form class="form">
+                <div class="form__group mb-s">
+                  <input
+                    type="text"
+                    name="full-name"
+                    id="full-name"
+                    class="form__input"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="full-name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group mb-s">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form__input"
+                    placeholder="Email"
+                    required
+                  />
+                  <label for="email" class="form__label">Email</label>
+                </div>
+                <div class="form__group mb-m">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      name="size"
+                      id="small"
+                      class="form__radio-input"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group
+                    </label>
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      name="size"
+                      id="large"
+                      class="form__radio-input"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn--green">
+                  Next Step &rarr;
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
