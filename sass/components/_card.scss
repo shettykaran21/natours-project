@@ -122,4 +122,25 @@
       }
     }
   }
+
+  &__back-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+
+  &__price {
+    color: #fff;
+    &--only {
+      font-size: $default-font-size;
+    }
+
+    &--value {
+      font-size: 5rem;
+      font-weight: 100;
+    }
+  }
 }

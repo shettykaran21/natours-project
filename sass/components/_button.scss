@@ -41,10 +41,19 @@
 
   &--white {
     background-color: #fff;
-    color: #777;
+    color: $color-grey-dark;
 
     &::after {
       background-color: #fff;
+    }
+  }
+
+  &--green {
+    background-color: $color-green;
+    color: #fff;
+
+    &::after {
+      background-color: $color-green;
     }
   }
 
