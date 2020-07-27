@@ -1,0 +1,50 @@
+.footer {
+  background-color: $color-grey-dark-2;
+  color: $color-grey-light-1;
+  font-size: 1.3rem;
+  padding: 15rem 0;
+
+  &__logo-box {
+  }
+
+  &__logo {
+    height: 15rem;
+    width: auto;
+    display: inline-block;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      text-transform: uppercase;
+    }
+
+    &--link {
+      &:link,
+      &:visited {
+        color: inherit;
+        text-decoration: none;
+        letter-spacing: 0.1rem;
+        transition: all 0.2s ease;
+        font-size: inherit;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-green;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      }
+    }
+  }
+
+  &__copyright {
+    color: $color-grey-dark;
+  }
+}
