@@ -18,6 +18,7 @@
     background-color: #fff;
     box-shadow: 0 1rem 4rem rgba($color-black, 0.15);
     border-radius: 3px;
+    transition: all 0.3s ease;
   }
 
   &__left {
@@ -33,6 +34,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey-dark;
+      position: absolute;
+      top: 2.5rem;
+      line-height: 1;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $color-green;
+    }
   }
 
   &__img {
