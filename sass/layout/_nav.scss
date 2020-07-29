@@ -14,6 +14,16 @@
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 1rem 4rem rgba($color-black, 0.15);
+
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__background {
@@ -28,7 +38,15 @@
 
     transition: all 0.5s ease;
 
-    // transform: scale(70);
+    @include respond(tab-port) {
+      top: 5rem;
+      right: 5rem;
+    }
+
+    @include respond(phone) {
+      top: 4rem;
+      right: 4rem;
+    }
   }
 
   &__nav {
@@ -52,7 +70,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 

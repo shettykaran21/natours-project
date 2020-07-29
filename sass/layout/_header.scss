@@ -10,6 +10,11 @@
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   position: relative;
 
+  @include respond(phone) {
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
   &__heading {
     position: absolute;
     top: 40%;

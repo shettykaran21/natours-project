@@ -4,3 +4,32 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// Media manager
+// Base + typo + grid > layout > components
+
+@mixin respond($device) {
+  @if ($device == phone) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if ($device == tab-port) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @if ($device == tab-land) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($device == big-desktop) {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
