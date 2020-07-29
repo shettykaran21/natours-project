@@ -635,7 +635,7 @@ body {
 
 .nav__checkbox:checked + .nav__button > .nav__icon::before {
   top: 0;
-  transform: rotate(-135deg); }
+  transform: rotate(135deg); }
 
 .section-about {
   background-color: #f7f7f7;
