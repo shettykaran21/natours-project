@@ -860,3 +860,10 @@ body {
     @media only screen and (max-width: 1200px) {
       .book__form {
         padding: 3rem; } }
+
+.section-goo {
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #7ed56f, #27b485); }
+
+.goo {
+  font-size: 20rem; }

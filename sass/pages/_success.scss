@@ -1,0 +1,12 @@
+.section-goo {
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-green-light,
+    $color-green-dark
+  );
+}
+
+.goo {
+  font-size: 20rem;
+}
