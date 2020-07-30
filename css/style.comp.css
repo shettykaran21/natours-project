@@ -867,3 +867,6 @@ body {
 
 .goo {
   font-size: 20rem; }
+  @media only screen and (max-width: 600px) {
+    .goo {
+      font-size: 10rem; } }

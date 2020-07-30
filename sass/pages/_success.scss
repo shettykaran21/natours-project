@@ -9,4 +9,8 @@
 
 .goo {
   font-size: 20rem;
+
+  @include respond(phone) {
+    font-size: 10rem;
+  }
 }
